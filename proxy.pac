@@ -25,6 +25,16 @@ function FindProxyForURL (url, host) {
   if (shExpMatch(host, "facebook.com"))
     return "SOCKS5 127.0.0.1:4455;SOCKS 127.0.0.1:4455";
 
+/* OpenAI */
+  if (shExpMatch(host, "*.chatgpt.com"))
+    return "SOCKS5 127.0.0.1:4455;SOCKS 127.0.0.1:4455";
+  if (shExpMatch(host, "chatgpt.com"))
+    return "SOCKS5 127.0.0.1:4455;SOCKS 127.0.0.1:4455";
+if (shExpMatch(host, "*.openai.com"))
+    return "SOCKS5 127.0.0.1:4455;SOCKS 127.0.0.1:4455";
+  if (shExpMatch(host, "openai.com"))
+    return "SOCKS5 127.0.0.1:4455;SOCKS 127.0.0.1:4455";
+
 /* Direct */
   return 'DIRECT';
 }
