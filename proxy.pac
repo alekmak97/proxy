@@ -13,28 +13,28 @@ function FindProxyForURL (url, host) {
   if (shExpMatch(host, "linkedin.com"))
     return "SOCKS5 127.0.0.1:4455;SOCKS 127.0.0.1:4455";
 
-   /* Instagram */
+  /* Instagram */
   if (shExpMatch(host, "*.instagram.com"))
     return "SOCKS5 127.0.0.1:4455;SOCKS 127.0.0.1:4455";
   if (shExpMatch(host, "instagram.com"))
     return "SOCKS5 127.0.0.1:4455;SOCKS 127.0.0.1:4455";
 
- /* Facebook */
+  /* Facebook */
   if (shExpMatch(host, "*.facebook.com"))
     return "SOCKS5 127.0.0.1:4455;SOCKS 127.0.0.1:4455";
   if (shExpMatch(host, "facebook.com"))
     return "SOCKS5 127.0.0.1:4455;SOCKS 127.0.0.1:4455";
 
-/* OpenAI */
+  /* OpenAI */
   if (shExpMatch(host, "*.chatgpt.com"))
     return "SOCKS5 127.0.0.1:4455;SOCKS 127.0.0.1:4455";
   if (shExpMatch(host, "chatgpt.com"))
     return "SOCKS5 127.0.0.1:4455;SOCKS 127.0.0.1:4455";
-if (shExpMatch(host, "*.openai.com"))
+  if (shExpMatch(host, "*.openai.com"))
     return "SOCKS5 127.0.0.1:4455;SOCKS 127.0.0.1:4455";
   if (shExpMatch(host, "openai.com"))
     return "SOCKS5 127.0.0.1:4455;SOCKS 127.0.0.1:4455";
 
-/* Direct */
+ /* Direct */
   return 'DIRECT';
 }
